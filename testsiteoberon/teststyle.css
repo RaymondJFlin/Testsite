@@ -96,3 +96,11 @@ h2{
 h3{
     padding-left: 37px;
 }
+
+.nieuwsoverzicht{
+    display: flex;
+}
+
+.short_view{
+    margin: 15px;
+}
