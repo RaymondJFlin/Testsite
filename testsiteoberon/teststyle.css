@@ -90,6 +90,9 @@ h2{
 
 
 }
-.Nieuws{
-    text-decoration: none;
+.Overzicht .Nieuws{
+    list-style-type: none;
+}
+h3{
+    padding-left: 37px;
 }
