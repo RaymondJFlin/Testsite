@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="teststyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+<!--navigation-->
+<div class="topnav" id="myTopnav">
+    <a href="testsite.html">Home</a>
+    <a href="testnews.html">News</a>
+    <a href="testcontact.html">Contact</a>
+    <a href="testabout.html">About</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="Overzicht">
+    <h3>Nieuws overzicht</h3>
+    <hr>
+    <ul class="Nieuws">
+        <li>
+                <a href="#">Lorem Ipsum</a>
+            <div class="new_quick_view">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illo possimus quidem sequi ullam.</br>
+                Aliquam at consequatur dolor expedita fugit iste perferendis quas quia sit? Eius explicabo harum maxime quam!
+                <div class="full_new_story">
+                    <a href="#">Lees Meer</a>
+                </div>
+            </div>
+        </li>
+<hr>
+        <li>
+            <a href="#">Lorem Ipsum</a>
+            <div class="new_quick_view">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illo possimus quidem sequi ullam.</br>
+                Aliquam at consequatur dolor expedita fugit iste perferendis quas quia sit? Eius explicabo harum maxime quam!
+                <div class="full_new_story">
+                    <a href="#">Lees Meer</a>
+                </div>
+            </div>
+        </li>
+<hr>
+        <li>
+            <a href="#">Lorem Ipsum</a>
+            <div class="new_quick_view">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illo possimus quidem sequi ullam.</br>
+                Aliquam at consequatur dolor expedita fugit iste perferendis quas quia sit? Eius explicabo harum maxime quam!
+                <div class="full_new_story">
+                    <a href="#">Lees Meer</a>
+                </div>
+            </div>
+        </li>
+
+
+
+
+
+    </ul>
+</div>
+
+
+
+<!--navscript-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
