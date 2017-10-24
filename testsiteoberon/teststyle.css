@@ -1,5 +1,10 @@
 body {margin:0;}
 
+html {
+    background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Grunge-Seamless-Pattern-For-Website-Background.jpg");
+
+}
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -92,6 +97,7 @@ h2{
 }
 .Overzicht .Nieuws{
     list-style-type: none;
+
 }
 h3{
     padding-left: 37px;
@@ -106,13 +112,26 @@ h3{
     width: 33%;
     box-shadow: 15px 15px 15px grey;
     text-align: center;
+    background-color: transparent;
 }
 .short_view, a{text-decoration: none;}
 
 .scrolltop{
     float: right;
     display: block;
-    background-color: black;
-    color: #f2f2f2;
+    background-color: transparent;
+    color: black;
     font-size: 250%;
+    box-shadow: 5px 5px 5px black;
+}
+
+footer{
+    width: 100%;
+    background-color: transparent;
+    float:left;
+    margin: 0 0 0 0;
+    padding: 20px;
+    display: block;
+    text-align: center;
+
 }
