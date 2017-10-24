@@ -103,4 +103,8 @@ h3{
 
 .short_view{
     margin: 15px;
+    width: 33%;
+    box-shadow: 15px 15px 15px grey;
+    text-align: center;
 }
+.short_view, a{text-decoration: none;}
