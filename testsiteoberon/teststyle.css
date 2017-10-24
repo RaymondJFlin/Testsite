@@ -108,3 +108,11 @@ h3{
     text-align: center;
 }
 .short_view, a{text-decoration: none;}
+
+.scrolltop{
+    float: right;
+    display: block;
+    background-color: black;
+    color: #f2f2f2;
+    font-size: 250%;
+}

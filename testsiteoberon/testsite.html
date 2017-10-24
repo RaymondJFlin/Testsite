@@ -102,12 +102,13 @@
                 error harum laborum natus nesciunt nihil rem repellendus sit?</p>
         </a>
     </div>
+</div>
 
+<div class="scrolltop">
+    <a href="#" class="page-top">^</a>
+</div>
 
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--slidescript-->
 <script>
     var slideIndex = 1;
@@ -148,6 +149,12 @@
             x.className = "topnav";
         }
     }
+    $(document).ready(function() {
+        $(".page-top").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    });
 </script>
 </body>
 </html>
