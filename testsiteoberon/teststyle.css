@@ -165,3 +165,16 @@ input[type=submit]:hover {
     background-color: transparent;
     padding: 20px;
 }
+
+.about p, h3 {
+    display: inline-block;
+    width:50%;
+    padding:15px;
+    text-align: center;
+}
+.about{
+    text-align: center;
+}
+.contactinfo{
+    text-align: center;
+}
