@@ -106,11 +106,16 @@ h3{
 
 .nieuwsoverzicht{
     display: flex;
+    width:100%;
+}
+
+.nieuwsoverzicht .short_view img{
+    width: 100%;
 }
 
 .short_view{
     margin: 15px;
-    width: 33%;
+    width: 100%;
     box-shadow: 15px 15px 15px grey;
     text-align: center;
     background-color: transparent;
