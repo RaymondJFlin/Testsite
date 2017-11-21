@@ -11,15 +11,16 @@
 <body>
 <!--navigation-->
 <div class="topnav" id="myTopnav">
-    <a href="testsite.html">Home</a>
+    <a href="testsite.php">Home</a>
     <a href="testnews.html">News</a>
     <a href="testcontact.html">Contact</a>
     <a href="testabout.html">About</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
     <form>
         <input type="text" name="search" placeholder="Search..">
     </form>
+
+    <a href="javascript:void(0);" style="position: absolute; top:10px; right: 10px; font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <!--slideshow-->
@@ -46,19 +47,19 @@
 <hr>
 <!--sign up-->
 <div class="Signups">
-    <div class="Honkbal">
+    <div class="Honkbal signups__item">
         <a href="testabout.html">
             <img src="Honkbal1.jpg">
         <p>Inschrijven voor Honkbal</p>
         </a>
     </div>
-    <div class="Softbal">
+    <div class="Softbal signups__item">
         <a href="testabout.html">
             <img src="softball.jpg" width="50px">
         <p>Inschrijven voor Softball</p>
         </a>
     </div>
-    <div class="Jeugd">
+    <div class="Jeugd signups__item">
         <a href="testabout.html">
         <img src="jeugd.jpg">
         <p>Inschrijven voor Jeugd</p>
@@ -117,77 +118,13 @@
 
 <hr>
 
-<footer>
-    <address>
-        Test fase website
-        <p style="text-align:center">
-            <!--Twitter icon-->
-            <a href="#" target="_blank">
-                <img alt="" src="https://s3.amazonaws.com/flashissue/ueBIjxRoTBuYR6XWW1iO_v3qVW5nRUq5VZF9RQXi2_twitter.png" />
-            </a>&nbsp; &nbsp; &nbsp;
-            <!--facebook-->
-            <a href="https://www.facebook.com/pages/Quick-Honkbalclub-Amsterdam/125905274164066" target="_blank">
-                <img alt="" src="https://s3.amazonaws.com/flashissue/MsIJsIsDT9WLAxxH4aIK_OgdHV3vxSR2737LGd8cq_facebook.png" />
-            </a>&nbsp; &nbsp;&nbsp;
-            <a href="#" target="_blank">
-                <img alt="" src="https://s3.amazonaws.com/flashissue/gHd2XoyiQbKBqljm7bzg_63j3xtd7SX28TTMeOSfZ_google.png" />
-            </a>&nbsp; &nbsp;&nbsp;
-        </p>
-    </address>
+<footer></footer>
 
-</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/imports.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/slider.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!--slidescript-->
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-        showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-red", "");
-        }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-red";
-    }
-</script>
-
-<!--navscript-->
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    <!--topscroll-->
-    $(document).ready(function() {
-        $(".page-top").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-            return false;
-        });
-    });
-
-
-</script>
 
 
 </body>
