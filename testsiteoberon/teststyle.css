@@ -105,7 +105,7 @@ h3{
 
 .nieuwsoverzicht{
     display: flex;
-    width:65%;
+    margin: 50px 200px 0;
     flex-direction: row;
 }
 
@@ -113,6 +113,10 @@ h3{
     width: 100%;
 }
 
+.nieuws__item{
+    margin: 15px;
+    width:33%
+}
 .short_view{
     margin: 15px;
     width: 100%;
