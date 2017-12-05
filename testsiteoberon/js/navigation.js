@@ -13,3 +13,7 @@ $(document).ready(function() {
         return false;
     });
 });
+
+var page = document.querySelector('.container');
+page.style.opacity = 0;
+$(page).animate({opacity: 1}, 400);
